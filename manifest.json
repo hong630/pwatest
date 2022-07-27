@@ -2,13 +2,13 @@
   "name": "영어공부",
   "short_name": "영어공부",
   "icons": [{
-    "src": "cheer.jpg",
+    "src": "/cheer.jpg",
     "sizes": "192x192",
-    "type": "image/jpg"
+    "type": "image/png"
   }, {
-    "src": "cheer.jpg",
+    "src": "/cheer.jpg",
     "sizes": "512x512",
-    "type": "image/jpg"
+    "type": "image/png"
   }],
   "start_url": "/randomText",
   "display": "standalone",
