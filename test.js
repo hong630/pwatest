@@ -24,5 +24,26 @@ function changeTxt(){
     blankedDiv.innerText = result;
 }
 
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e;
+});
+
+const installApp = document.getElementById('installApp');
+console.log(installApp)
+
+installApp.addEventListener('click', async () => {
+    console.log('working?')
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            deferredPrompt = null;
+        }
+    }
+});
+
+
 
 
