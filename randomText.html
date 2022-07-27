@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>랜덤문제~</title>
+
+    <!-- 주소창 등의 웹 브라우저 UI를 표시하지 않기 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 상태 바의 스타일을 지정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
+    <meta name="apple-mobile-web-app-title" content="영어공부">
+    <!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
+    <link rel="apple-touch-icon" href="cheer.jpg">
     <!-- 웹 앱 매니페스트를 읽어 들이기 -->
     <link rel="manifest" href="manifest.json">
     <!-- 서비스 워커를 등록 -->
@@ -56,6 +65,7 @@
 <textarea id="original_text"></textarea>
 <input type="text" id="random_value" placeholder="숫자를 적어주세요.">
 <button type="submit" id="submit_all" onclick="changeTxt()">문제 볼게요!</button>
+<button type="button" id="installApp">설치할래요</button>
 <div id="blanked_text"></div>
 </body>
 </html>
