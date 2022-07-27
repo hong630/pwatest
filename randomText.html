@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>랜덤문제~</title>
+    <script src="test.js"></script>
+    <style>
+        @font-face {
+            font-family: 'IBMPlexSansKR-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body{
+            font-family: 'IBMPlexSansKR-Regular';
+        }
+        textarea{
+            width: 50%;
+            height: 300px;
+            border: 5px solid black;
+            border-radius: 12px;
+            font-family: 'IBMPlexSansKR-Regular';
+        }
+        input{
+            display: block;
+            margin: 20px 0 20px 0;
+            border: 2px solid black;
+            height: 30px;
+            border-radius: 12px;
+        }
+        input::placeholder{
+            font-family: 'IBMPlexSansKR-Regular';
+            padding-left: 10px;
+        }
+        img{
+            width: 22%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<img src="./cheer.jpg" alt="">
+
+<textarea id="original_text"></textarea>
+<input type="text" id="random_value" placeholder="숫자를 적어주세요.">
+<button type="submit" id="submit_all" onclick="changeTxt()">문제 볼게요!</button>
+<div id="blanked_text"></div>
+</body>
+</html>
