@@ -1,0 +1,23 @@
+{
+  "name": "angelbaby",
+  "version": "0.0.1",
+  "description": "just for test and angel baby is the song I heard when I made this ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hong630/pwatest.git"
+  },
+  "author": "clare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hong630/pwatest/issues"
+  },
+  "homepage": "https://github.com/hong630/pwatest#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  }
+}
